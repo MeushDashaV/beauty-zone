@@ -14,7 +14,7 @@
 header {
   background: rgba(255, 255, 255, 0.25);
   position: relative;
-  z-index: 3;
+  z-index: 100;
 }
 
 .logo {
@@ -114,7 +114,6 @@ li {
   font-size: 12px;
   padding-top: 20px;
   padding-bottom: 20px;
-  text-align: center;
 }
 
 h1 {
@@ -336,4 +335,12 @@ footer {
 
 .text-logo {
   color: var(--color-logo);
+}
+
+.map {
+  border-radius: 32px;
+}
+
+.navigation {
+  display: flex;
 }
