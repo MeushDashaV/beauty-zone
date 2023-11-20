@@ -21,22 +21,26 @@
           </ul>
         </a>
         <div class="social-nav">
-          <a class="social-header" target="_blank" href="#">
-            <img src="./img/phone.svg" alt="" />
+          <a target="_blank" href="#">
+            <svg class="social-header" width="35" height="40">
+              <use href="./img/sprite.svg#icon-phone"></use>
+            </svg>
           </a>
           <a
-            class="social-header"
             target="_blank"
             href="https://www.facebook.com/?locale=uk_UA"
           >
-            <img src="./img/facebook.svg" alt="" />
+          <svg class="social-header" width="35" height="40">
+            <use href="./img/sprite.svg#icon-facebook"></use>
+          </svg>
           </a>
           <a
-            class="social-header"
             target="_blank"
             href="https://www.instagram.com/"
           >
-            <img src="./img/instagram.svg" alt="" />
+          <svg class="social-header" width="35" height="40">
+            <use href="./img/sprite.svg#icon-instagram"></use>
+          </svg>
           </a>
         </div>
       </nav>
@@ -54,8 +58,11 @@
             <p class="note">
               Запишись та отримай безкоштовну консультацію нашого косметолога
             </p>
+            <div class="vector-block1"><img src="./img/Vector-block1.png" alt=""></div>
           </div>
+         
         </section>
+
         <section class="block-2" id="about-us">
           <div class="block-text">
             <h3>
@@ -122,9 +129,11 @@
           <section class="block-4" id="services">
             <h3>Наші <span class="text-logo">процедури</span></h3>
             <div class="services-container">
-              <div class="nav-arrow">
-                <img class="vector-nav-arrow" src="./img/Arrow1.svg" alt="" />
-              </div>
+              <button class="nav-arrow">
+                <svg class="arrow" width="17" height="20">
+                  <use href="./img/sprite.svg#icon-Arrow-left"></use>
+                </svg>
+              </button>
               <div class="service">
                 <img class="vector-services" src="./img/маски.png" alt="" />
                 <img class="vector-services-bckg" src="./img/Rectangle5080-services.svg" alt="" />
@@ -140,9 +149,11 @@
                 <img class="vector-services-bckg" src="./img/Rectangle5080-services.svg" alt="" />
                 <p class="description4">Очищення<br> обличчя</p>
               </div>
-              <div class="nav-arrow">
-                <img class="vector-nav-arrow" src="./img/Arrow2.svg" alt="" />
-              </div>
+              <button class="nav-arrow">
+                <svg class="arrow" width="17" height="20">
+                  <use href="./img/sprite.svg#icon-Arrow-right"></use>
+                </svg>
+              </button>
             </div>
             <div class="nav-elips">
               <img class="vector-nav-elips" src="./img/Ellipse1.svg" alt="" />
@@ -165,7 +176,7 @@
               ></iframe>
             </div>
             <div class="form">
-    <h4>Запишіться <span class="text-logo">безкоштовно</span>
+    <h4>Запишіться <span class="text-logo">безкоштовно</span><br>
       та отримайте подарунок</h4>
     <form action="#" method="post">
       <label for="name"></label>
@@ -224,22 +235,26 @@
           </address>
 
           <div class="social-nav-footer">
-            <a class="social-footer" target="_blank" href="#">
-              <img src="./img/phone-footer.svg" alt="Phone" />
+            <a target="_blank" href="#">
+<svg class="social-footer" width="35" height="40" fill="white">
+  <use href="./img/sprite.svg#icon-phone"></use>
+</svg>
             </a>
             <a
-              class="social-footer"
               target="_blank"
               href="https://www.facebook.com/?locale=uk_UA"
             >
-              <img src="./img/facebook-footer.svg" alt="Facebook" />
+            <svg class="social-footer" width="35" height="40" fill="white">
+              <use href="./img/sprite.svg#icon-facebook"></use>
+            </svg>
             </a>
             <a
-              class="social-footer"
               target="_blank"
               href="https://www.instagram.com/"
             >
-              <img src="./img/instagram-footer.svg" alt="Instagram" />
+            <svg class="social-footer" width="35" height="40" fill="white">
+              <use href="./img/sprite.svg#icon-instagram"></use>
+            </svg>
             </a>
           </div>
         </div>
@@ -257,7 +272,26 @@
     </footer>
 
     <div class="modal-window">
-      <div class="form-modal"></div>
+      <div class="form-modal">
+          <h3 class="modal-title">Замовити<br> дзвінок</h3>
+          <h4 class="modal-description">Запишіться <span class="text-logo">безкоштовно</span>
+            <br>та отримайте подарунок</h4>
+          <form action="#" method="post">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" required placeholder="Ваше ім'я та прізвище">
+      
+            <label for="phone"></label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Ваш номер телефону">
+      
+            <label for="email"></label>
+            <input type="email" id="email" name="email" required placeholder="Ваша електронна пошта">
+      
+      
+            <button type="button" class="btn-form">Записатись безкоштовно</button>
+            <p class="note">Натискаючи на кнопку я погоджуюсь з <a href="#">політикою конфіденційності</a></p>
+          </form>
+          <img class="vector-modal" src="./img/Vector1.jpg" alt="vector">
+      </div>
     </div>
   </body>
 </html>

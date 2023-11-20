@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&family=Saira:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&family=Roboto:ital,wght@0,500;1,500&family=Saira:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&family=Roboto:ital,wght@1,500&family=Saira:wght@600&display=swap');
 .container {
   max-width: 1700px;
 }
@@ -10,6 +9,8 @@
   --color-background: #011c44;
   --color-note: #747272;
 }
+
+
 
 header {
   height: 106px;
@@ -24,28 +25,21 @@ header {
 }
 
 .block-1 {
-  padding-left: 50px;
-  padding-right: 50px;
-  width: 100%;
-  height: 100%;
+  padding: 0 50px;
   margin-top: -106px;
-  background: url(./img/background-block-1.svg) no-repeat;
-  background-size: 100 auto;
-  background-position: right top;
+  background: url(./img/bckg-block1.png) no-repeat;
+  background-size: cover;
+  background-position: center top;
   background-repeat: no-repeat;
-  z-index: 1;
 }
 
-.block-1::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(./img/Rectangle-block-1.svg) no-repeat;
-  background-size: 100 auto;
-  z-index: 2;
+
+.vector-block1 {
+  position: relative;
+  fill: #fff;
+  width: auto;
+  height: 100px;
+  rotate: 4;
 }
 
 .block-1-text {
@@ -57,12 +51,14 @@ header {
 
 .social-header {
   cursor: pointer;
+  fill: var(--color-background);
+  padding-left: 32px;
 }
 
-.social-header img {
-  height: 30px;
-  margin-right: 15px;
+.social-header:hover {
+  fill: var(--color-logo);
 }
+
 
 .social-nav {
   display: flex;
@@ -111,6 +107,26 @@ header {
   color: var(--color-logo);
 }
 
+.nav-arrow {
+height: 44px;
+width: 44px;
+border-radius: 100px;
+border-color: var(--color-background);
+}
+
+.nav-arrow:hover {
+background-color: var(--color-logo);
+border-color: #fff;
+}
+
+.arrow {
+  fill: var(--color-background);
+}
+
+.arrow:hover {
+  fill: #fff;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -139,7 +155,7 @@ li {
 }
 
 h1 {
-  font-family: 'Saira', sans-serif;
+  font-family: 'Play', sans-serif;
   font-size: 140px;
   font-weight: 700;
   line-height: 114px;
@@ -151,17 +167,24 @@ h1 {
   margin: 0;
 }
 h3 {
-  font-family: 'Saira', sans-serif;
+  font-family: 'Play', sans-serif;
   font-size: 64px;
 }
 
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
 h5 {
-  font-family: 'Saira', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   color: var(--color-background);
+  font-style: normal;
 }
 p {
-  font-family: 'Saira', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
@@ -217,8 +240,8 @@ p {
 
 .star {
   position: absolute;
-  top: 10px; /* Відстань від верхнього краю блоку */
-  right: 10px; /* Відстань від правого краю блоку */
+  top: 10px;
+  right: 10px;
   display: flex;
 }
 
@@ -317,8 +340,8 @@ p {
   position: absolute;
   bottom: 0;
   left: 0;
-  color: white; /* Колір тексту */
-  padding: 0 0 50px 0; /* Простір навколо тексту */
+  color: white;
+  padding: 0 0 50px 0;
   z-index: 30;
 }
 
@@ -382,10 +405,6 @@ footer {
   justify-content: flex-end;
 }
 
-.social-nav-footer img {
-  height: 30px;
-  margin-right: 30px;
-}
 
 .footer-text {
   font-size: 16px;
@@ -439,8 +458,6 @@ width: 421px;
   border-radius: 32px;
 }
 
-.form-container {
-}
 
 form {
   display: flex;
@@ -493,3 +510,34 @@ padding-left: 40px;
   gap: 10px;
   background-color: #ffffff00;
 }
+
+.modal-title {
+  font-size: 64px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  line-height: 75px;
+  padding-top: 40px;
+}
+
+.modal-description {
+  text-align: center;
+  line-height: 26px;
+  font-size: 22px;
+}
+
+.form-modal {
+    height: 681px;
+    width: 723px;
+      background-color: var(--color-background);
+      border-radius: 48px;
+}
+
+.vector-modal {
+  position: relative;
+}
+
+.social-footer:hover {
+fill: var(--color-logo);
+}
+
