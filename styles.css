@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&family=Roboto:ital,wght@0,500;1,500&family=Saira:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&family=Roboto:ital,wght@1,500&family=Saira:wght@600&display=swap');
 
-
-
 .container {
   max-width: 1700px;
-  margin: 0;
+  margin: auto;
 }
 
 :root {
@@ -14,9 +12,6 @@
   --color-note: #747272;
 }
 
-body {
-  font-family: 'Play', sans-serif;
-}
 
 a {
   text-decoration: none;
@@ -82,7 +77,7 @@ p {
 }
 
 .description {
-  font-family: 'Saira', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 22px;
   margin-bottom: 30px;
 }
@@ -112,6 +107,7 @@ header {
 
 .social-header:hover {
   fill: var(--color-logo);
+  transition: fill 0.3s ease-out;
 }
 
 .social-nav {
@@ -137,8 +133,10 @@ header {
 .menu-nav-li {
   display: inline;
   margin-right: 50px;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   color: var(--color-background);
+  transition: color 0.2s ease-out;
 }
 
 .menu-nav-li:hover {
@@ -151,7 +149,10 @@ header {
 
 /*block 1 with bachground*/
 
+
+
 .block-1 {
+  width: auto;
   padding: 0 50px;
   margin-top: -106px;
   background: url(./img/bckg-block1.png) no-repeat;
@@ -190,6 +191,9 @@ header {
   gap: 10px;
   background-color: #011c4400;
   cursor: pointer;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
 }
 
 .btn-block-1:hover {
@@ -224,37 +228,37 @@ header {
 }
 
 .star1 {
+  transform: rotate(30deg);
   width: 64px;
-  rotate: 30;
   position: relative;
-top: 350px;
-right: 370px;
+  top: 350px;
+  right: 370px;
   stroke-width: 2;
-  animation: rotateStar 4s linear infinite; /* Анімація обертання */
-  transform-origin: 50% 50%; /* Точка обертання у центрі */
-  transform-box: fill-box; /* Це додається для виправлення проблеми величини елемента */
+  animation: rotateStar 4s linear infinite;
+  transform-origin: 50% 50%; 
+  transform-box: fill-box; 
 }
 
 .star2 {
+  transform: rotate(22deg);
+  transform: rotate(30deg);
   width: 40px;
-  rotate: 30;
   position: relative;
   right: 50px;
   stroke-width: 2;
-  animation: rotateStar 3s linear infinite; /* Анімація обертання */
-  transform-origin: 50% 50%; /* Точка обертання у центрі */
-  transform-box: fill-box; /* Це додається для виправлення проблеми величини елемента */
+  animation: rotateStar 3s linear infinite;
+  transform-origin: 50% 50%; 
+  transform-box: fill-box;
 }
 .star3 {
   width: 16px;
-  rotate: 23;
   position: relative;
   top: 250px;
   right: 110px;
   stroke-width: 2;
-  animation: rotateStar 2s linear infinite; /* Анімація обертання */
-  transform-origin: 50% 50%; /* Точка обертання у центрі */
-  transform-box: fill-box; /* Це додається для виправлення проблеми величини елемента */
+  animation: rotateStar 2s linear infinite;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
 }
 
 @keyframes rotateStar {
@@ -288,6 +292,14 @@ right: 370px;
 }
 
 /*block 3 about us frame*/
+.background-blue {
+  width: auto;
+  background-image: url(./img/background.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
 
 .block-3 {
   padding-left: 50px;
@@ -295,6 +307,10 @@ right: 370px;
   font-family: 'Saira', sans-serif;
   padding-top: 170px;
   text-align: center;
+}
+
+.why.description3 {
+  margin-top: 30px;
 }
 
 .description3 {
@@ -342,14 +358,12 @@ right: 370px;
   padding: 0;
   cursor: pointer;
   margin: 44px;
+  transition: background-color 0.5s ease-out, fill 0.5s ease-out, border-radius 0.5s ease-out;
 }
 
 .nav-arrow:hover {
   background-color: var(--color-logo);
   border-color: #fff;
-}
-
-.nav-arrow:hover {
   fill: #fff;
 }
 
@@ -422,7 +436,6 @@ right: 370px;
   width: 605px;
 }
 
-
 .navigation {
   display: flex;
   justify-content: center;
@@ -430,13 +443,6 @@ right: 370px;
 }
 
 /*FORM*/
-.background-blue {
-  width: auto;
-  background-image: url(./img/background.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .form {
   height: 481px;
   width: 421px;
@@ -479,10 +485,10 @@ input {
   gap: 10px;
   background-color: var(--color-logo);
   cursor: pointer;
+  transition: background-color 0.5s ease-out;
 }
 
 .btn-form:hover {
-  color: #fff;
   width: 281px;
   height: 53px;
   top: 102px;
@@ -492,18 +498,19 @@ input {
   border: 2px solid;
   border-color: var(--color-logo);
   gap: 10px;
-  background-color: #ffffff00;
+  background-color: transparent;
 }
 
 /*footer block*/
 
-
 .footer-text {
   color: #fff;
+  z-index: 10;
 }
 
 .footer-text:hover {
   color: var(--color-logo);
+  transition: color 0.3s ease-out;
 }
 
 .footer-text:active {
@@ -514,8 +521,13 @@ input {
   cursor: pointer;
 }
 
+.social-footer {
+  transition: fill 0.3s ease-out;
+}
+
 .social-footer:hover {
   fill: var(--color-logo);
+
 }
 
 footer {
@@ -526,7 +538,7 @@ footer {
 .container-footer {
   display: flex;
   flex: 1;
-  padding: 56px 0 56px 100px;
+  padding: 56px 0 0 100px;
   margin: auto;
   gap: 20px;
 }
@@ -541,13 +553,13 @@ footer {
 }
 
 .img-footer {
-  margin-top: -160px;
-  display: flex;
-  justify-content: flex-end;
+  position: relative;
+  bottom: 0;
 }
 
 .footer-text {
   font-size: 16px;
+  z-index: 2;
 }
 
 .cooperation-text {
@@ -555,7 +567,42 @@ footer {
   margin-bottom: 19px;
 }
 
+
 /*MODAL WINDOW*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-window {
+  height: 681px;
+  width: 723px;
+  background-color: var(--color-background);
+  border-radius: 48px;
+  position: relative;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-close {
+  position: absolute;
+  top: 42px;
+  right: 42px;
+  cursor: pointer;
+}
 
 .modal-title {
   font-size: 64px;
@@ -564,21 +611,22 @@ footer {
   margin: 0;
   line-height: 75px;
   padding-top: 40px;
+  overflow: auto;
+  z-index: 502;
 }
 
 .modal-description {
   text-align: center;
   line-height: 26px;
   font-size: 22px;
+  z-index: 502;
 }
 
 .form-modal {
-  height: 681px;
-  width: 723px;
-  background-color: var(--color-background);
-  border-radius: 48px;
+
 }
 
 .vector-modal {
-  position: relative;
+  position: absolute;
+z-index: 501;
 }

@@ -48,18 +48,16 @@
               Beauty <br />
               Zone
             </h1>
-            <button type="button" class="btn-block-1">Замовити дзвінок</button>
+            <button type="button" class="btn-block-1 modal-open">Замовити дзвінок</button>
             <p class="note">
               Запишись та отримай безкоштовну консультацію нашого косметолога
             </p>
-            <div class="vector-block1">
-              <img src="./img/Vector-block1.png" alt="" />
-            </div>
+          </div>
           </div>
         </section>
 
-        <section class="block-2" id="about-us">
-          <div class="block-text">
+        <section class="block-2 container" id="about-us">
+            <div class="block-text">
             <h3>
               Перевтілюйтесь <br />в <span class="text-logo">Beauty Zone!</span>
             </h3>
@@ -74,21 +72,22 @@
               процедури та препарати допоможуть вам підтримувати свою красу та
               молодість. З нами краса назавжди!
             </p>
-          </div>
-          <div class="block-img-face">
+            </div>
+           <div class="block-img-face">
             <img class="face1-block-2" src="./img/обличчя1.png" alt="" />
             <img class="face2-block-2" src="./img/обличчя2.png" alt="" />
-          </div>
+            </div>
 
-          <div class="star">
+            <div class="star">
             <img class="star1" src="./img/Star1.svg" alt="" />
             <img class="star2" src="./img/Star2.svg" alt="" />
             <img class="star3" src="./img/Star3.svg" alt="" />
           </div>
         </section>
 
-        <div class="background-blue">
+        <div class="background-blue container">
           <section class="block-3" id="why-us">
+            <div class="container">
             <h3 class="why description3">Чому люди</h3>
             <h3 class="us description3">обирають нас</h3>
             <div class="frame-container">
@@ -114,9 +113,11 @@
                 </p>
               </div>
             </div>
+            </div>
           </section>
 
           <section class="block-4" id="services">
+            <div class="container">
             <h3>Наші <span class="text-logo">процедури</span></h3>
             <div class="services-container">
               <button class="nav-arrow" type="button">
@@ -168,9 +169,10 @@
               <img class="vector-nav-elips" src="./img/Ellipse2.svg" alt="" />
               <img class="vector-nav-elips" src="./img/Ellipse4.svg" alt="" />
             </div>
+            </div>
           </section>
 
-          <section class="block-5" id="contacts">
+          <section class="block-5 container" id="contacts">
             <h3>Як нас <span class="text-logo">знайти</span></h3>
             <div class="navigation">
                 <iframe
@@ -231,7 +233,8 @@
         </div>
       </div>
     </main>
-    <footer class="container">
+    <footer class="footer">
+      <div class="container">
       <div class="container-footer">
         <a class="column" href="./index.html"
           ><img class="logo" src="./img/logo.svg" alt="logo"
@@ -290,14 +293,21 @@
             <a href="#" target="_blank">Політика конфіденційності</a>
           </p>
           <p class="note">© 2022 Дані захищені</p>
+          <div class="img-footer">
+            <img src="./img/footer-img.png" alt="" />
+          </div>
         </div>
-      </div>
-      <div class="img-footer column">
-        <img src="./img/footer-img.png" alt="" />
-      </div>
-    </footer>
 
+      </div>
+
+    </div>
+    </footer>
+<div class="backdrop">
     <div class="modal-window">
+      
+      <button class="modal-close" type="button">
+        Close
+      </button>
       <div class="form-modal">
         <h3 class="modal-title">
           Замовити<br />
@@ -345,5 +355,11 @@
         <img class="vector-modal" src="./img/Vector1.jpg" alt="vector" />
       </div>
     </div>
+  </div>
+
+
+  <script src="./js/modal.js"></script>
   </body>
 </html>
+
+
