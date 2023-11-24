@@ -1,0 +1,66 @@
+/*BUTTONS*/
+
+.btn-block-1 {
+    font-family: 'Saira', sans-serif;
+    font-size: 18px;
+    color: var(--color-background);
+    width: 219px;
+    height: 53px;
+    top: 102px;
+    left: 20px;
+    padding: 16px, 32px, 16px, 32px;
+    border-radius: 32px;
+    border: 2px solid;
+    border-color: var(--color-logo);
+    gap: 10px;
+    background-color: #011c4400;
+    cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.btn-block-1:hover {
+    color: #fff;
+    width: 219px;
+    height: 53px;
+    top: 102px;
+    left: 20px;
+    padding: 16px, 32px, 16px, 32px;
+    border-radius: 32px;
+    border: 2px solid;
+    border-color: var(--color-logo);
+    gap: 10px;
+    background-color: var(--color-logo);
+}
+
+.btn-form {
+    font-family: 'Saira', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    width: 281px;
+    height: 53px;
+    top: 102px;
+    left: 20px;
+    padding: 16px, 32px, 16px, 32px;
+    border-radius: 32px;
+    border: 2px solid;
+    border-color: var(--color-logo);
+    gap: 10px;
+    background-color: var(--color-logo);
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+}
+
+.btn-form:hover {
+    width: 281px;
+    height: 53px;
+    top: 102px;
+    left: 20px;
+    padding: 16px, 32px, 16px, 32px;
+    border-radius: 32px;
+    border: 2px solid;
+    border-color: var(--color-logo);
+    gap: 10px;
+    background-color: transparent;
+}

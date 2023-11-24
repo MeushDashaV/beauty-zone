@@ -1,0 +1,74 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: opacity .3s ease-in, visibility .3s ease-in;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-window {
+    height: 100%;
+    max-height: 700px;
+    width: 100%;
+    max-width: 723px;
+    background-color: var(--color-background);
+    border-radius: 48px;
+    position: relative;
+}
+
+
+
+.modal-close {
+    position: absolute;
+    top: 42px;
+    right: 42px;
+    cursor: pointer;
+}
+
+.modal-title {
+    font-size: 64px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    line-height: 75px;
+    padding-top: 40px;
+    overflow: auto;
+    z-index: 502;
+}
+
+.modal-description {
+    text-align: center;
+    line-height: 26px;
+    font-size: 22px;
+    z-index: 502;
+}
+
+.form-field {
+    margin-bottom: 32px;
+}
+
+.checkbox-input {
+    appearance: none;
+
+}
+
+.checkbox-label {
+    color: var(--color-note);
+}
+
+.checkbox-input:checked+.checkbox-label {
+    color: var(--color-logo);
+}
