@@ -1,0 +1,97 @@
+.block-2 {
+    position: relative;
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+        width: auto;
+
+    &__text {
+            width: 80%;
+        }
+    
+        &__description {
+            margin-bottom: 30px;
+                color: var(--color-background);
+                    font-family: Roboto;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 38px;
+        }
+    
+        &__star {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    
+        &__star1 {
+            transform: rotate(30deg);
+            width: 64px;
+            position: relative;
+            top: 350px;
+            right: 370px;
+            stroke-width: 2;
+            animation: rotateStar 4s linear infinite;
+            transform-origin: 50% 50%;
+            transform-box: fill-box;
+        }
+    
+        &__star2 {
+            transform: rotate(22deg);
+            transform: rotate(30deg);
+            width: 40px;
+            position: relative;
+            right: 50px;
+            stroke-width: 2;
+            animation: rotateStar 3s linear infinite;
+            transform-origin: 50% 50%;
+            transform-box: fill-box;
+        }
+    
+        &__star3 {
+            width: 16px;
+            position: relative;
+            top: 250px;
+            right: 110px;
+            stroke-width: 2;
+            animation: rotateStar 2s linear infinite;
+            transform-origin: 50% 50%;
+            transform-box: fill-box;
+        }
+    
+        @keyframes rotateStar {
+            from {
+                transform: rotate(0deg);
+            }
+    
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    
+        &__face1 {
+            border-radius: 50%;
+            width: 330px;
+            height: 330px;
+        }
+    
+        &__face2 {
+            border-radius: 50%;
+            width: 330px;
+            height: 330px;
+            margin-left: 200px;
+        }
+    
+        &__text-bold {
+            font-weight: bold;
+        }
+    
+        &__img-face {
+            margin-left: 100px;
+        }
+}
+

@@ -1,0 +1,16 @@
+.block-1 {
+    width: auto;
+    padding: 0 50px;
+    background: url(/img/bckg-block1.png) no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    &__text {
+            position: relative;
+            padding-top: 100px;
+            padding-left: 206px;
+            z-index: 3;
+        }
+}
+

@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&family=Roboto:ital,wght@0,500;1,500&family=Saira:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&family=Roboto:ital,wght@1,500&family=Saira:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&family=Roboto:ital,wght@0,100;0,500;1,500&family=Saira:wght@600&display=swap');
+
 @import './base';
+
+@import './utils/text';
 @import './utils/variables';
 @import './utils/utils';
+
 @import './components/buttons';
-@import './components/header';
-@import './components/block1-with-bcg';
-@import './components/block2-faces';
-@import './components/block3-bcg-blue';
-@import './components/block4-services';
-@import './components/block5-contacts';
-@import './components/footer';
+@import './layouts/header';
+@import './layouts/block1-with-bcg';
+@import './layouts/block2-faces';
+@import './layouts/block3-bcg-blue';
+@import './layouts/block4-services';
+@import './layouts/block5-contacts';
 @import './components/forms';
-@import './components/modal-wind'
+@import './layouts/footer';
+@import './components/modal-window'
+

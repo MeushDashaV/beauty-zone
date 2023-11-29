@@ -4,35 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
-    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
-      <nav class="container-header container">
+    <header class="header">
+      <nav class="header__container container">
         <a href="./index.html">
-          <img class="logo" src="./img/logo.svg" alt="logo" />
+          <img class="header__logo" src="./img/logo.svg" alt="logo" />
         </a>
-        <a class="menu-nav">
+        <a class="header__menu">
           <ul>
-            <li class="menu-nav-li"><a href="#about-us">Про нас</a></li>
-            <li class="menu-nav-li"><a href="#why-us">Чому ми</a></li>
-            <li class="menu-nav-li"><a href="#services">Наші процедури</a></li>
-            <li class="menu-nav-li"><a href="#contacts">Контакти</a></li>
+            <li class="header__link"><a href="#about-us">Про нас</a></li>
+            <li class="header__link"><a href="#why-us">Чому ми</a></li>
+            <li class="header__link"><a href="#services">Наші процедури</a></li>
+            <li class="header__link"><a href="#contacts">Контакти</a></li>
           </ul>
         </a>
-        <div class="social-nav">
+        <div class="header__social">
           <a target="_blank" href="#">
-            <svg class="social-header" width="35" height="40">
+            <svg class="header__social__link" width="35" height="40">
               <use href="./img/sprite.svg#icon-phone"></use>
             </svg>
           </a>
           <a target="_blank" href="https://www.facebook.com/?locale=uk_UA">
-            <svg class="social-header" width="35" height="40">
+            <svg class="header__social__link" width="35" height="40">
               <use href="./img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
           <a target="_blank" href="https://www.instagram.com/">
-            <svg class="social-header" width="35" height="40">
+            <svg class="header__social__link" width="35" height="40">
               <use href="./img/sprite.svg#icon-instagram"></use>
             </svg>
           </a>
@@ -40,15 +40,14 @@
       </nav>
     </header>
     <main>
-      <div class="container-block container">
-        <section class="block-1">
-          <div class="block-1-text">
+        <section class="block-1 container">
+          <div class="block-1__text">
             <h5>Косметологічна клініка</h5>
             <h1>
               Beauty <br />
               Zone
             </h1>
-            <button type="button" class="btn-block-1 modal-open">Замовити дзвінок</button>
+            <button type="button" class="block-1__btn modal-open">Замовити дзвінок</button>
             <p class="note">
               Запишись та отримай безкоштовну консультацію нашого косметолога
             </p>
@@ -57,128 +56,131 @@
         </section>
 
         <section class="block-2 container" id="about-us">
-            <div class="block-text">
+            <div class="block-2__text">
             <h3>
               Перевтілюйтесь <br />в <span class="text-logo">Beauty Zone!</span>
             </h3>
-            <p class="description">
+            <p class="block-2__description">
               Наша косметологічна клініка пропонує вам професійні послуги з
               догляду за шкірою обличчя та тіла.
             </p>
 
-            <p class="description">
-              В <span class="text-bold-bl2">Beauty Zone</span> ми гарантуємо
+            <p class="block-2__description">
+              В <span class="block-2__text-bold">Beauty Zone</span> ми гарантуємо
               найвищі стандарти якості та приємний сервіс. Наші косметологічні
               процедури та препарати допоможуть вам підтримувати свою красу та
               молодість. З нами краса назавжди!
             </p>
             </div>
-           <div class="block-img-face">
-            <img class="face1-block-2" src="./img/обличчя1.png" alt="" />
-            <img class="face2-block-2" src="./img/обличчя2.png" alt="" />
+           <div class="block-2__img-face">
+            <img class="block-2__face1" src="./img/обличчя1.png" alt="" />
+            <img class="block-2__face2" src="./img/обличчя2.png" alt="" />
             </div>
 
-            <div class="star">
-            <img class="star1" src="./img/Star1.svg" alt="" />
-            <img class="star2" src="./img/Star2.svg" alt="" />
-            <img class="star3" src="./img/Star3.svg" alt="" />
+            <div class="block-2__star">
+            <img class="block-2__star1" src="./img/Star1.svg" alt="" />
+            <img class="block-2__star2" src="./img/Star2.svg" alt="" />
+            <img class="block-2__star3" src="./img/Star3.svg" alt="" />
           </div>
         </section>
 
         <div class="background-blue container">
-          <section class="block-3" id="why-us">
-            <div class="container">
-            <h3 class="why description3">Чому люди</h3>
-            <h3 class="us description3">обирають нас</h3>
-            <div class="frame-container">
-              <div class="frame">
-                <img class="vector-frame1" src="./img/вибір1.svg" alt="" />
-                <p class="frame-text">
+          <section class="block-3 container" id="why-us">
+            <h3>Чому люди <br> <span class="text-logo"> обирають нас</span></h3>
+            <div class="block-3__frame-container">
+
+              <div class="block-3__frame">
+                <div class="block-3__description">
+                <img class="block-3__vector-frame1" src="./img/вибір1.svg" alt="" />
+                <p class="block-3__frame-text">
                   Всі наші косметологи мають вищу медичну освіту та стаж роботи
                   від 5 років
                 </p>
+                </div>
               </div>
-              <div class="frame">
-                <img class="vector-frame" src="./img/вибір2.svg" alt="" />
-                <p class="frame-text">
+
+              <div class="block-3__frame">
+                                <div class="block-3__description">
+                <img class="block-3__vector-frame" src="./img/вибір2.svg" alt="" />
+                <p class="block-3__frame-text">
                   Використовуємо тільки професійне обладнання та косметику,
                   перевірену часом
                 </p>
               </div>
-              <div class="frame">
-                <img class="vector-frame" src="./img/вибір3.svg" alt="" />
-                <p class="frame-text">
+              </div>
+              
+              <div class="block-3__frame">
+                <div class="block-3__description">
+                <img class="block-3__vector-frame" src="./img/вибір3.svg" alt="" />
+                <p class="block-3__frame-text">
                   Наша мета - підкреслити переваги та приховати недоліки, а не
                   переробити
                 </p>
               </div>
             </div>
-            </div>
           </section>
 
-          <section class="block-4" id="services">
-            <div class="container">
+          <section class="block-4 container" id="services">
             <h3>Наші <span class="text-logo">процедури</span></h3>
-            <div class="services-container">
-              <button class="nav-arrow" type="button">
+            <div class="block-4__services-container">
+              <button class="block-4__nav-arrow" type="button">
                 <svg width="17" height="17">
                   <use href="./img/sprite.svg#icon-Arrow-left"></use>
                 </svg>
               </button>
 
-              <div class="service">
-                <img class="vector-services" src="./img/маски.png" alt="" />
+              <div class="block-4__service">
+                <img class="block-4__vector-services" src="./img/маски.png" alt="" />
                 <img
-                  class="vector-services-bckg"
+                  class="block-4__vector-services-bckg"
                   src="./img/Rectangle5080-services.svg"
                   alt=""
                 />
-                <p class="description4">Маски <br />для обличчя</p>
+                <p class="block-4__description4">Маски <br />для обличчя</p>
               </div>
-              <div class="service">
-                <img class="vector-services" src="./img/інєкції.png" alt="" />
+              <div class="block-4__service">
+                <img class="block-4__vector-services" src="./img/інєкції.png" alt="" />
                 <img
-                  class="vector-services-bckg"
+                  class="block-4__vector-services-bckg"
                   src="./img/Rectangle5080-services.svg"
                   alt=""
                 />
-                <p class="description4">
+                <p class="block-4__description4">
                   Ін'єкції<br />
                   для обличчя
                 </p>
               </div>
-              <div class="service">
-                <img class="vector-services" src="./img/очищення.png" alt="" />
+              <div class="block-4__service">
+                <img class="block-4__vector-services" src="./img/очищення.png" alt="" />
                 <img
-                  class="vector-services-bckg"
+                  class="block-4__vector-services-bckg"
                   src="./img/Rectangle5080-services.svg"
                   alt=""
                 />
-                <p class="description4">
+                <p class="block-4__description4">
                   Очищення<br />
                   обличчя
                 </p>
               </div>
 
-              <button class="nav-arrow" type="button">
+              <button class="block-4__nav-arrow" type="button">
                 <svg width="17" height="17">
                   <use href="./img/sprite.svg#icon-Arrow-right"></use>
                 </svg>
               </button>
             </div>
-            <div class="nav-elips">
-              <img class="vector-nav-elips" src="./img/Ellipse1.svg" alt="" />
-              <img class="vector-nav-elips" src="./img/Ellipse2.svg" alt="" />
-              <img class="vector-nav-elips" src="./img/Ellipse4.svg" alt="" />
-            </div>
+            <div class="block-4__nav-elips">
+              <img class="block-4__vector-nav-elips" src="./img/Ellipse1.svg" alt="" />
+              <img class="block-4__vector-nav-elips" src="./img/Ellipse2.svg" alt="" />
+              <img class="block-4__vector-nav-elips" src="./img/Ellipse4.svg" alt="" />
             </div>
           </section>
 
           <section class="block-5 container" id="contacts">
             <h3>Як нас <span class="text-logo">знайти</span></h3>
-            <div class="navigation">
+            <div class="block-5__navigation">
                 <iframe
-                  class="map"
+                  class="block-5__map"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1700126585643!5m2!1suk!2sua"
                   width="605"
                   height="481"
@@ -193,9 +195,9 @@
                   та отримайте подарунок
                 </h4>
                 <form action="#" method="post" name="contact-form">
-                  <label class="form-label" for="name"></label>
+                  <label class="form__label" for="name"></label>
                   <input
-                    class="form-input"
+                    class="form__input"
                     type="text"
                     id="name"
                     name="name"
@@ -203,9 +205,9 @@
                     placeholder="Ваше ім'я та прізвище"
                   />
 
-                  <label class="form-label" for="phone"></label>
+                  <label class="form__label" for="phone"></label>
                   <input 
-                    class="form-input"
+                    class="form__input"
                     type="tel"
                     id="phone"
                     name="phone"
@@ -213,9 +215,9 @@
                     placeholder="Ваш номер телефону"
                   />
 
-                  <label class="form-label" for="email"></label>
+                  <label class="form__label" for="email"></label>
                   <input
-                    class="form-input"
+                    class="form__input"
                     type="email"
                     id="email"
                     name="email"
@@ -227,45 +229,42 @@
                     Записатись безкоштовно
                   </button>
                   <p class="note">
-                    Натискаючи на кнопку я погоджуюсь з <a href="#" class="pc-form">політикою
+                    Натискаючи на кнопку я погоджуюсь з <a href="https://automattic.com/privacy/" class="pc-form">політикою
                     конфіденційності</a> 
                   </p>
-                  <input class="checkbox-input" type="checkbox" name="terms-condition" id="terms-condition">
-                  <label class="checkbox-label" for="terms-condition">Я точно погоджуюсь!</label>
                 </form>
               </div>
             </div>
-            <div class="background-img-container"></div>
           </section>
         </div>
-      </div>
     </main>
-    <footer class="footer">
+
+    <footer class="footer ">
       <div class="container">
-      <div class="container-footer">
-        <a class="column" href="./index.html"
+      <div class="footer__container">
+        <a class="footer__column" href="./index.html"
           ><img class="logo" src="./img/logo.svg" alt="logo"
         /></a>
 
-        <div class="menu-nav-footer column">
+        <div class="footer__column">
           <ul>
-            <li class="footer-text"><a href="#about-us">Про нас</a></li>
-            <li class="footer-text"><a href="#why-us">Чому ми</a></li>
-            <li class="footer-text"><a href="#services">Наші процедури</a></li>
-            <li class="footer-text"><a href="#contacts">Контакти</a></li>
+            <li class="footer__link"><a href="#about-us">Про нас</a></li>
+            <li class="footer__link"><a href="#why-us">Чому ми</a></li>
+            <li class="footer__link"><a href="#services">Наші процедури</a></li>
+            <li class="footer__link"><a href="#contacts">Контакти</a></li>
           </ul>
         </div>
 
-        <div class="contact-footer column">
-          <address class="nav-footer">
+        <div class="footer__column">
+          <address class="footer__nav-footer">
             <ul>
-              <li class="footer-text">
+              <li class="footer__text">
                 <a href="tel:+380960000007">+ 38 (096) 000 00 07</a>
               </li>
-              <li class="footer-text">
+              <li class="footer__text">
                 <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
               </li>
-              <li class="footer-text">
+              <li class="footer__text">
                 <a
                   href="https://maps.app.goo.gl/8k8LiRJa2Az8qU1z7"
                   target="_blank"
@@ -276,31 +275,31 @@
             </ul>
           </address>
 
-          <div class="social-nav-footer column">
+          <div class="footer__social-nav footer__column">
             <a target="_blank" href="#">
-              <svg class="social-footer" width="35" height="40" fill="white">
+              <svg class="footer__social" width="35" height="40" fill="white">
                 <use href="./img/sprite.svg#icon-phone"></use>
               </svg>
             </a>
             <a target="_blank" href="https://www.facebook.com/?locale=uk_UA">
-              <svg class="social-footer" width="35" height="40" fill="white">
+              <svg class="footer__social" width="35" height="40" fill="white">
                 <use href="./img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
             <a target="_blank" href="https://www.instagram.com/">
-              <svg class="social-footer" width="35" height="40" fill="white">
+              <svg class="footer__social" width="35" height="40" fill="white">
                 <use href="./img/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
           </div>
         </div>
 
-        <div class="cooperation column">
-          <p class="cooperation-text">
+        <div class="footer__column">
+          <p class="footer__cooperation-text">
             <a href="#" target="_blank">Політика конфіденційності</a>
           </p>
           <p class="note">© 2022 Дані захищені</p>
-          <div class="img-footer">
+          <div class="footer__img">
             <img src="./img/footer-img.png" alt="" />
           </div>
         </div>
@@ -308,11 +307,12 @@
     </div>
     
     </footer>
+
 <div class="backdrop is-hidden">
     <div class="modal-window">
       
       <button class="modal-close" type="button">
-        Close
+        X
       </button>
       <div class="form-modal">
         <h3 class="modal-title">
@@ -361,7 +361,7 @@
           <button type="submit" class="btn-form">Записатись безкоштовно</button>
           <p class="note-form">
             Натискаючи на кнопку я погоджуюсь з
-            <a href="#" class="pc-form">політикою конфіденційності</a>
+            <a href="https://automattic.com/privacy/" class="pc-form">політикою конфіденційності</a>
           </p>
         </form>
 
@@ -369,7 +369,6 @@
       </div>
     </div>
   </div>
-
 
   <script src="./js/modal.js"></script>
   </body>

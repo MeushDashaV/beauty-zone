@@ -1,6 +1,6 @@
 /*BUTTONS*/
 
-.btn-block-1 {
+.block-1__btn {
     font-family: 'Saira', sans-serif;
     font-size: 18px;
     color: var(--color-background);
@@ -20,7 +20,7 @@
     transition-timing-function: ease-out;
 }
 
-.btn-block-1:hover {
+.block-1__btn:hover {
     color: #fff;
     width: 219px;
     height: 53px;

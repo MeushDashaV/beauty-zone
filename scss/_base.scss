@@ -1,6 +1,6 @@
 /*BASE*/
 .container {
-    max-width: 1700px;
+    max-width: 1600px;
     margin: auto;
 }
 
@@ -11,6 +11,7 @@ a {
     font-style: normal;
     display: inline-block;
     cursor: pointer;
+
 }
 
 ul {
@@ -57,35 +58,16 @@ h5 {
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     margin: 0;
 }
 
 /*TEXT*/
 
-.note {
-    color: var(--color-note);
-    width: 238px;
-    font-size: 12px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.note-form {
-    color: var(--color-note);
-    width: 238px;
-    font-size: 12px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-.description {
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
-    margin-bottom: 30px;
-}
-
-.block-text {
-    width: 80%;
+.background-blue {
+    width: 100%;
+    background-image: url(/img/background.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
 }
