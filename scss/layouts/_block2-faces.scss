@@ -6,7 +6,10 @@
         width: auto;
 
     &__text {
-            width: 80%;
+        &--limited {
+            max-width: 80%;
+        }
+
         }
     
         &__description {

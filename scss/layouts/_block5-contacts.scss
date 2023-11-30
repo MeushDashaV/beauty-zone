@@ -10,6 +10,9 @@
             flex-shrink: 0;
             border: none;
             width: 605px;
+            &--limited {
+                max-width: 605px;
+            }
         }
     
         &__navigation {

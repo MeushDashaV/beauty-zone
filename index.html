@@ -56,7 +56,7 @@
         </section>
 
         <section class="block-2 container" id="about-us">
-            <div class="block-2__text">
+            <div class="block-2__text block-2__text--limited">
             <h3>
               Перевтілюйтесь <br />в <span class="text-logo">Beauty Zone!</span>
             </h3>
@@ -87,11 +87,11 @@
         <div class="background-blue container">
           <section class="block-3 container" id="why-us">
             <h3>Чому люди <br> <span class="text-logo"> обирають нас</span></h3>
-            <div class="block-3__frame-container">
+            <div class="block-3__frame-container block-3__frame-container--limited">
 
-              <div class="block-3__frame">
+              <div class="block-3__frame block-3__frame--limited">
                 <div class="block-3__description">
-                <img class="block-3__vector-frame1" src="./img/вибір1.svg" alt="" />
+                <img class="block-3__vector-frame1 block-3__vector-frame1--limited" src="./img/вибір1.svg" alt="" />
                 <p class="block-3__frame-text">
                   Всі наші косметологи мають вищу медичну освіту та стаж роботи
                   від 5 років
@@ -101,7 +101,7 @@
 
               <div class="block-3__frame">
                                 <div class="block-3__description">
-                <img class="block-3__vector-frame" src="./img/вибір2.svg" alt="" />
+                <img class="block-3__vector-frame block-3__vector-frame--limited" src="./img/вибір2.svg" alt="" />
                 <p class="block-3__frame-text">
                   Використовуємо тільки професійне обладнання та косметику,
                   перевірену часом
@@ -111,7 +111,7 @@
               
               <div class="block-3__frame">
                 <div class="block-3__description">
-                <img class="block-3__vector-frame" src="./img/вибір3.svg" alt="" />
+                <img class="block-3__vector-frame block-3__vector-frame--limited" src="./img/вибір3.svg" alt="" />
                 <p class="block-3__frame-text">
                   Наша мета - підкреслити переваги та приховати недоліки, а не
                   переробити
@@ -123,7 +123,7 @@
           <section class="block-4 container" id="services">
             <h3>Наші <span class="text-logo">процедури</span></h3>
             <div class="block-4__services-container">
-              <button class="block-4__nav-arrow" type="button">
+              <button class="block-4__nav-arrow block-4__nav-arrow--limited" type="button">
                 <svg width="17" height="17">
                   <use href="./img/sprite.svg#icon-Arrow-left"></use>
                 </svg>
@@ -163,13 +163,13 @@
                 </p>
               </div>
 
-              <button class="block-4__nav-arrow" type="button">
+              <button class="block-4__nav-arrow block-4__nav-arrow--limited" type="button">
                 <svg width="17" height="17">
                   <use href="./img/sprite.svg#icon-Arrow-right"></use>
                 </svg>
               </button>
             </div>
-            <div class="block-4__nav-elips">
+            <div class="block-4__nav-elips block-4__nav-elips--limited">
               <img class="block-4__vector-nav-elips" src="./img/Ellipse1.svg" alt="" />
               <img class="block-4__vector-nav-elips" src="./img/Ellipse2.svg" alt="" />
               <img class="block-4__vector-nav-elips" src="./img/Ellipse4.svg" alt="" />
@@ -180,7 +180,7 @@
             <h3>Як нас <span class="text-logo">знайти</span></h3>
             <div class="block-5__navigation">
                 <iframe
-                  class="block-5__map"
+                  class="block-5__map block-5__map--limited"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1700126585643!5m2!1suk!2sua"
                   width="605"
                   height="481"
@@ -189,7 +189,7 @@
                   referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
 
-              <div class="form">
+              <div class="form form--limited">
                 <h4>
                   Запишіться <span class="text-logo">безкоштовно</span><br />
                   та отримайте подарунок
@@ -197,7 +197,7 @@
                 <form action="#" method="post" name="contact-form">
                   <label class="form__label" for="name"></label>
                   <input
-                    class="form__input"
+                    class="form__input form__input--limited"
                     type="text"
                     id="name"
                     name="name"
@@ -207,7 +207,7 @@
 
                   <label class="form__label" for="phone"></label>
                   <input 
-                    class="form__input"
+                    class="form__input form__input--limited"
                     type="tel"
                     id="phone"
                     name="phone"
@@ -217,7 +217,7 @@
 
                   <label class="form__label" for="email"></label>
                   <input
-                    class="form__input"
+                    class="form__input form__input--limited"
                     type="email"
                     id="email"
                     name="email"
@@ -311,23 +311,23 @@
 <div class="backdrop is-hidden">
     <div class="modal-window">
       
-      <button class="modal-close" type="button">
+      <button class="modal-window__close" type="button">
         X
       </button>
-      <div class="form-modal">
-        <h3 class="modal-title">
+      <div class="modal-window__form">
+        <h3 class="modal-window__title">
           Замовити<br />
           дзвінок
         </h3>
-        <h4 class="modal-description">
+        <h4 class="modal-window__description">
           Запишіться <span class="text-logo">безкоштовно</span> <br />та
           отримайте подарунок
         </h4>
 
         <form action="#" method="post" name="order-call-form">
-          <label class="form-label vicually-hidden" for="name">Ваше ім'я та прізвище</label>
+          <label class="modal-window__form-label vicually-hidden" for="name">Ваше ім'я та прізвище</label>
           <input
-          class="input"
+          class="modal-window__input"
             type="text"
             id="name"
             name="name"
@@ -337,9 +337,9 @@
             placeholder="Ваше ім'я та прізвище"
           />
 
-          <label class="form-label vicually-hidden" for="phone">Ваш номер телефону</label>
+          <label class="modal-window__form-label vicually-hidden" for="phone">Ваш номер телефону</label>
           <input
-          class="input"
+          class="modal-window__input"
             type="tel"
             id="phone"
             name="phone"
@@ -348,9 +348,9 @@
             placeholder="Ваш номер телефону"
           />
 
-          <label class="form-label vicually-hidden" for="email">Ваша електронна пошта</label>
+          <label class="modal-window__form-label vicually-hidden" for="email">Ваша електронна пошта</label>
           <input
-          class="input"
+          class="modal-window__input"
             type="email"
             id="email"
             name="email"
@@ -365,7 +365,7 @@
           </p>
         </form>
 
-        <img class="vector-modal" src="./img/Vector1.jpg" alt="vector" />
+        <img class="modal-window__vector" src="./img/Vector1.jpg" alt="vector" />
       </div>
     </div>
   </div>

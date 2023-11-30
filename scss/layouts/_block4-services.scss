@@ -16,7 +16,6 @@
             justify-content: center;
             align-items: center;
             height: 44px;
-            width: 44px;
             background-color: transparent;
             border: 1px solid var(--color-background);
             border-radius: 50%;
@@ -24,6 +23,9 @@
             cursor: pointer;
             margin: 44px;
             transition: background-color 0.5s ease-out, fill 0.5s ease-out, border-radius 0.5s ease-out;
+            &--limited {
+                max-width: 44px;
+            }
         }
     
         &__nav-arrow:hover {
@@ -73,7 +75,9 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 121px;
+            &--limited {
+                max-width: 121px;
+            }
         }
 }
 

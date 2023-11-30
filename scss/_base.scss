@@ -4,66 +4,6 @@
     margin: auto;
 }
 
-
-a {
-    text-decoration: none;
-    color: inherit;
-    font-style: normal;
-    display: inline-block;
-    cursor: pointer;
-
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    list-style-type: none;
-    margin-bottom: 19px;
-}
-
-h1 {
-    font-family: 'Play', sans-serif;
-    font-size: 140px;
-    font-weight: 700;
-    line-height: 114px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: var(--color-logo);
-    padding-top: 20px;
-    padding-bottom: 50px;
-    margin: 0;
-}
-
-h3 {
-    font-family: 'Play', sans-serif;
-    font-size: 64px;
-}
-
-h4 {
-    font-family: 'Play', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    color: #fff;
-}
-
-h5 {
-    font-family: 'Play', sans-serif;
-    font-size: 18px;
-    color: var(--color-background);
-    font-style: normal;
-}
-
-p {
-    font-family: 'Roboto';
-    margin: 0;
-}
-
-/*TEXT*/
-
 .background-blue {
     width: 100%;
     background-image: url(/img/background.svg);
