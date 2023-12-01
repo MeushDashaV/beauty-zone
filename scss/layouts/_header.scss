@@ -2,13 +2,17 @@
 
 .header {
     height: 106px;
-        background: rgba(255, 255, 255, 0.25);
-        backdrop-filter: blur(4px);
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         z-index: 100;
+
+        @media screen and (min-width: $bz-desktop) {
+        backdrop-filter: blur(4px);
+        background: rgba(255, 255, 255, 0.25);
+            
+        }
 
     &__container {
         display: flex;
@@ -17,11 +21,21 @@
         height: 106px;
         padding-left: 50px;
         padding-right: 50px;
+        margin: auto;
     }
 
         &__logo {
             width: 74px;
         }
+
+        &__social {
+            display: flex;
+
+            @media screen and (max-width: $bz-desktop) {
+                display: none;
+            }
+        }
+        
         &__social__link {
             cursor: pointer;
             fill: var(--color-background);
@@ -32,21 +46,26 @@
             fill: var(--color-logo);
             transition: fill 0.3s ease-out;
         }
+
     
-        &__social {
-            display: flex;
-        }
-    
-        &__menu ul {
-            list-style-type: none;
-            padding: 0;
+        &__menu {
             margin: 0;
+            padding: 0;
+            list-style-type: none;
             display: flex;
+                    align-items: center;
+                    justify-content: center;
+            gap: 56px;
+            
+            @media screen and (max-width: $bz-desktop) {
+                display: none;
+            }
         }
     
         &__link {
-            display: inline;
-            margin-right: 50px;
+            display: flex;
+            justify-content: center;
+            margin: auto;
             font-family: 'Roboto', sans-serif;
             font-size: 18px;
             color: var(--color-background);
@@ -55,6 +74,16 @@
     
         &__link:hover {
             color: var(--color-logo);
+        }
+
+        &__burger {
+            background-color: transparent;
+            border: none;
+            fill: #fff;
+
+            @media screen and (min-width: $bz-desktop) {
+                display: none;
+            }
         }
 }
 

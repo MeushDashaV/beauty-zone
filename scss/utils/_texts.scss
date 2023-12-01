@@ -9,6 +9,14 @@
     font-size: 12px;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin: auto;
+
+    @media screen and (max-width: $bz-mobile) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        }
 }
 
 .note-form {
@@ -39,18 +47,7 @@ li {
     margin-bottom: 19px;
 }
 
-h1 {
-    font-family: 'Play', sans-serif;
-    font-size: 140px;
-    font-weight: 700;
-    line-height: 114px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: var(--color-logo);
-    padding-top: 20px;
-    padding-bottom: 50px;
-    margin: 0;
-}
+
 
 h3 {
     font-family: 'Play', sans-serif;
@@ -63,16 +60,4 @@ h4 {
     font-weight: 400;
     font-size: 22px;
     color: #fff;
-}
-
-h5 {
-    font-family: 'Play', sans-serif;
-    font-size: 18px;
-    color: var(--color-background);
-    font-style: normal;
-}
-
-p {
-    font-family: 'Roboto';
-    margin: 0;
 }
