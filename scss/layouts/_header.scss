@@ -11,7 +11,7 @@
         @media screen and (min-width: $bz-desktop) {
         backdrop-filter: blur(4px);
         background: rgba(255, 255, 255, 0.25);
-            
+
         }
 
     &__container {
@@ -22,6 +22,12 @@
         padding-left: 50px;
         padding-right: 50px;
         margin: auto;
+
+        @media screen and (max-width: $bz-desktop) {
+                    padding-left: 20px;
+                        padding-right: 20px;
+                        width: auto;
+        }
     }
 
         &__logo {
@@ -77,10 +83,13 @@
         }
 
         &__burger {
+            width: 24px;
+            height: 24px;
+            padding: 0;
             background-color: transparent;
             border: none;
-            fill: #fff;
-
+            fill: rgba(255, 255, 255, 1);
+            
             @media screen and (min-width: $bz-desktop) {
                 display: none;
             }

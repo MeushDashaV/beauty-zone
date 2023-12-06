@@ -5,6 +5,10 @@
     padding-right: 50px;
         width: auto;
 
+            @media screen and (max-width: 720px) {
+                    padding-left: 20px;
+                }
+
     &__text {
         &--limited {
             max-width: 80%;
@@ -20,6 +24,11 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: 38px;
+                   @media screen and (max-width: $bz-desktop) {
+                    font-size: 18px;
+                    line-height: normal;
+                     margin-bottom: 16px;
+                       }
         }
     
         &__star {
@@ -41,6 +50,11 @@
             animation: rotateStar 4s linear infinite;
             transform-origin: 50% 50%;
             transform-box: fill-box;
+                        @media screen and (max-width: $bz-desktop) {
+                                        position: relative;
+                                            bottom: 0;
+                                            right: 0;
+                            }
         }
     
         &__star2 {
@@ -53,6 +67,9 @@
             animation: rotateStar 3s linear infinite;
             transform-origin: 50% 50%;
             transform-box: fill-box;
+                        @media screen and (max-width: $bz-desktop) {
+                                display: none;
+                            }
         }
     
         &__star3 {
@@ -64,6 +81,9 @@
             animation: rotateStar 2s linear infinite;
             transform-origin: 50% 50%;
             transform-box: fill-box;
+                        @media screen and (max-width: $bz-desktop) {
+                                display: none;
+                            }
         }
     
         @keyframes rotateStar {
@@ -95,6 +115,9 @@
     
         &__img-face {
             margin-left: 100px;
+            @media screen and (max-width: $bz-desktop) {
+                display: none;
+            }
         }
 }
 

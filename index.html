@@ -35,11 +35,48 @@
             </svg>
           </a>
         </div>
-<button class="header__burger" type="button">
+<button class="header__burger menu-btn-open" type="button">
   <svg width="24" height="24">
               <use href="./img/sprite.svg#icon-menu"></use>
             </svg>
 </button>
+
+
+<div class="mobile-menu">
+          <a href="./index.html">
+          <img class="mobile-menu__logo" src="./img/logo.svg" alt="logo" />
+        </a>
+        
+          <div class="mobile-menu__column">
+          <ul>
+            <li class="mobile-menu__link"><a href="#about-us">Про нас</a></li>
+            <li class="mobile-menu__link"><a href="#why-us">Чому ми</a></li>
+            <li class="mobile-menu__link"><a href="#services">Наші процедури</a></li>
+            <li class="mobile-menu__link"><a href="#contacts">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="mobile-menu__social">
+          <a target="_blank" href="#">
+            <svg class="mobile-menu__social-link" width="35" height="40">
+              <use href="./img/sprite.svg#icon-phone"></use>
+            </svg>
+          </a>
+          <a target="_blank" href="https://www.facebook.com/?locale=uk_UA">
+            <svg class="mobile-menu__social-link" width="35" height="40">
+              <use href="./img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/">
+            <svg class="mobile-menu__social-link" width="35" height="40">
+              <use href="./img/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+  <button class="mobile-menu__btn-close menu-btn-close" type="button">
+                <svg class="icon-line-md_menu-to-close-transition" width="24" height="24">
+              <use href="./img/sprite.svg#icon-line-md_menu-to-close-transition"></use>
+            </svg></button>
+</div>
 
       </nav>
     </header>
@@ -59,7 +96,7 @@
           </div>
         </section>
 
-        <!--<section class="block-2 container" id="about-us">
+<section class="block-2 container" id="about-us">
             <div class="block-2__text block-2__text--limited">
             <h3>
               Перевтілюйтесь <br />в <span class="text-logo">Beauty Zone!</span>
@@ -86,9 +123,9 @@
             <img class="block-2__star2" src="./img/Star2.svg" alt="" />
             <img class="block-2__star3" src="./img/Star3.svg" alt="" />
           </div>
-        </section>-->
+        </section>
 
-        <!--<div class="background-blue container">
+    <div class="background-blue container">
           <section class="block-3 container" id="why-us">
             <h3>Чому люди <br> <span class="text-logo"> обирають нас</span></h3>
             <div class="block-3__frame-container block-3__frame-container--limited">
@@ -122,7 +159,7 @@
                 </p>
               </div>
             </div>
-          </section>-->
+          </section>
 
           <!--<section class="block-4 container" id="services">
             <h3>Наші <span class="text-logo">процедури</span></h3>
@@ -375,6 +412,7 @@
   </div>
 
   <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
 

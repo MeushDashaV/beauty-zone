@@ -9,15 +9,14 @@
     font-size: 12px;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin: auto;
 
-    @media screen and (max-width: $bz-mobile) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 720px) {
+            margin: auto;
+            padding-top: 8px;
+    }
 
-        }
 }
+
 
 .note-form {
     color: var(--color-note);
@@ -52,6 +51,9 @@ li {
 h3 {
     font-family: 'Play', sans-serif;
     font-size: 64px;
+    @media screen and (max-width: 720px) {
+        font-size: 32px;
+    }
 }
 
 h4 {

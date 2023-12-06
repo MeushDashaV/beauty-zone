@@ -6,9 +6,16 @@
     background-position: center top;
     background-repeat: no-repeat;
 
-    @media screen and (max-width: $bz-mobile) {
+    @media screen and (max-width: $bz-desktop) {
             padding: 0;
-
+            background: url(/img/bckg-mobile.png), rgba(255, 255, 255, 1),
+                rgba(255, 255, 255, 0.78),
+                rgba(255, 255, 255, 0.2),
+                rgba(255, 255, 255, 0) no-repeat;
+                background-size: cover;
+                    background-position: center top;
+                    background-repeat: no-repeat;
+                    height: 323px;
         }
 
     &__title {
@@ -30,7 +37,7 @@
                     width: 100%;
                     text-align: center;
                     padding: 0;
-                    height: 100px;
+                    height: 80px;
                 }
 
                 @media screen and (max-width: $bz-mobile) {
