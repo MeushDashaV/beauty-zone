@@ -12,12 +12,19 @@ form {
         width: 421px;
     }
 
+        @media screen and (max-width: $bz-desktop) {
+            height: 434px;
+            order: 1;
+            justify-content: center;
+            width: 320px;
+            margin: auto;
+        }
+
     &__label {
             margin-bottom: 2px;
             display: block;
         }
     &__input {
-            padding-left: 40px;
             margin-bottom: 16px;
             font-size: 16px;
             color: #fff;
@@ -28,6 +35,11 @@ form {
             &--limited {
                 width: 310px;
             }
+                        @media screen and (max-width: $bz-desktop) {
+                            width: 241px;
+                            font-size: 13px;
+                            height: 46px;
+                        }
         }
 
     &__input:focus {
@@ -37,5 +49,9 @@ form {
 
     &__input::placeholder {
                 color: rgba(255, 255, 255, 1);
+                padding-left: 40px;
+                @media screen and (max-width: $bz-desktop) {
+                       padding-left: 24px;
+                    }
             }
         }

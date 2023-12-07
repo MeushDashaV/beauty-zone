@@ -8,11 +8,33 @@
             padding: 56px 0 0 100px;
             margin: auto;
             gap: 20px;
+            @media screen and (max-width: $bz-desktop) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: auto;
+                padding-top: 32px;
+                padding-left: 0;
+                margin: auto;
+                gap: 0;
+                }
         }
     
         &__column {
             flex: 1;
+                        @media screen and (max-width: $bz-desktop) {
+                                text-align: center;
+                                width: auto;
+                                gap: 16px;
+                            }
         }
+                        &__column ul {
+                            @media screen and (max-width: $bz-desktop) {
+                                text-align: center;
+                                width: auto;
+                                padding-top: 42px;
+                            }
+                        }
     
         &__link {
             color: #fff;
@@ -32,6 +54,11 @@
         &__social-nav {
             height: 42px;
             width: 174px;
+                                @media screen and (max-width: $bz-desktop) {
+                                    display: flex;
+                                        gap: 20px;
+                                        justify-content: center;
+                                    }
         }
     
         &__social-nav img {
@@ -50,12 +77,36 @@
         &__cooperation-text {
             margin-right: -100px;
             margin-bottom: 19px;
+
+            @media screen and (max-width: $bz-desktop) {
+                    margin: auto;
+                    display: none;
+            }
         }
     
+
+        &__cooperation-text-mobile {
+            display: none;
+                        @media screen and (max-width: $bz-desktop) {
+                                display: flex;
+                                margin: auto;
+                                padding-bottom: 16px;
+                            }
+        }
     
         &__img {
             position: relative;
             bottom: 0;
+
+        @media screen and (max-width: $bz-desktop) {
+                display: none;
+            }
+        }
+
+        &__nav-footer {
+        @media screen and (max-width: $bz-desktop) {
+            display: none;
+        }
         }
 }
 

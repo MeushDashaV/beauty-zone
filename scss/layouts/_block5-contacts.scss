@@ -4,6 +4,9 @@
     margin-bottom: 80px;
     margin: 80 auto;
         width: auto;
+        @media screen and (max-width: $bz-desktop) {
+                margin: 0;
+            }
     
     &__map {
             border-radius: 32px;
@@ -13,11 +16,25 @@
             &--limited {
                 max-width: 605px;
             }
+
+                        @media screen and (max-width: $bz-desktop) {
+                            order: 2;
+                            width: 100%;
+                            border: none;
+                            border-radius: 0;
+                            height: 232px;
+                            margin: 0;
+                        }
         }
     
         &__navigation {
             display: flex;
             justify-content: center;
             gap: 32px;
+
+                    @media screen and (max-width: $bz-desktop) {
+                            display: flex;
+                            flex-direction: column;
+                        }
         }
 }
