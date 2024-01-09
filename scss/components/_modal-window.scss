@@ -22,8 +22,7 @@ a.pc-form {
     text-decoration: underline;
 }
 .modal-window {
-    height: 100%;
-    max-height: 700px;
+    max-height: 681px;
     width: 100%;
     max-width: 723px;
     background-color: var(--color-background);
@@ -47,7 +46,7 @@ a.pc-form {
             color: #fff;
             margin: 0;
             line-height: 75px;
-            padding-top: 40px;
+            padding-top: 42px;
             overflow: auto;
             z-index: 502;
         }
@@ -57,6 +56,8 @@ a.pc-form {
             line-height: 26px;
             font-size: 22px;
             z-index: 502;
+            margin-top: 40px;
+            margin-bottom: 34px;
         }
     
         &__input {

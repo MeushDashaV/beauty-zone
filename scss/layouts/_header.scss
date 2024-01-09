@@ -8,7 +8,7 @@
         width: 100%;
         z-index: 100;
 
-        @media screen and (min-width: $bz-desktop) {
+        @media screen and (min-width: $bz-mobile) {
         backdrop-filter: blur(4px);
         background: rgba(255, 255, 255, 0.25);
 
@@ -23,7 +23,7 @@
         padding-right: 50px;
         margin: auto;
 
-        @media screen and (max-width: $bz-desktop) {
+        @media screen and (max-width: $bz-mobile) {
                     padding-left: 20px;
                         padding-right: 20px;
                         width: auto;
@@ -37,7 +37,7 @@
         &__social {
             display: flex;
 
-            @media screen and (max-width: $bz-desktop) {
+            @media screen and (max-width: $bz-mobile) {
                 display: none;
             }
         }
@@ -63,7 +63,7 @@
                     justify-content: center;
             gap: 56px;
             
-            @media screen and (max-width: $bz-desktop) {
+            @media screen and (max-width: $bz-mobile) {
                 display: none;
             }
         }
@@ -90,7 +90,7 @@
             border: none;
             fill: rgba(255, 255, 255, 1);
             
-            @media screen and (min-width: $bz-desktop) {
+            @media screen and (min-width: $bz-mobile) {
                 display: none;
             }
         }
